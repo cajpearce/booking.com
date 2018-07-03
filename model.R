@@ -48,7 +48,16 @@ best = bookings %>%
   ) %>% 
   arrange(diff)
 
-best
+best %>%
+  mutate(price = scales::dollar(price),
+         predicted = scales::dollar(round(predicted))) %>%
+  select(`Hotel Name` = name, 
+         Location = location,
+         `Reviews` = review.count,
+         Stars = stars,
+         Rating = score,
+         Price = price,
+         Predicted = predicted)
 
 
 get.url = function(name) {
