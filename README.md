@@ -21,6 +21,14 @@ Once you have your search results, navigate to the second page (scroll to the bo
 
 This URL then needs to be copied into the script, and thus webscraping can be done.
 
+## Results
+
+A linear model was used to predict hotel price from the obtained metric. An R^2 of 0.70 was obtained.
+
+The following results from R are the 5 best hotels that are underpriced and satisfy a host of other criteria for my holiday in Bali:
+
+![Bali results](https://raw.githubusercontent.com/cajpearce/booking.com/master/images/Bali.PNG)
+
 ## Shortfalls
 
 Two main negatives stick out:
