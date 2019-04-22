@@ -36,4 +36,5 @@ vignettes/*.pdf
 rsconnect/
 
 # data
-*.csv
+data/
+html/
